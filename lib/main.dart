@@ -25,8 +25,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
-        title: Text("Github Profile", style: TextStyle(color: Colors.white)),
+        backgroundColor: Colors.brown,
+        title: Text("Hack Your October", style: TextStyle(color: Colors.white)),
         actions: <Widget>[
           IconButton(
             icon: Icon(
@@ -43,45 +43,13 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           shrinkWrap: true,
           children: <Widget>[
             Center(
-              child: Container(
-                height: 200.0,
-                width: 200.0,
-                decoration: BoxDecoration(
-                    image: DecorationImage(
-                        image: AssetImage("img/profile.png"),
-                        fit: BoxFit.cover)),
-              ),
-            ),
-            SizedBox(height: 10.0),
-            Center(child: Text("Muhammad Isrim")),
-            SizedBox(height: 10.0),
-            Center(
-              child: RaisedButton(
-                onPressed: () {},
-                child: Text("Edit Profile"),
-              ),
-            ),
-            SizedBox(height: 10.0),
-            Container(
-              color: Colors.grey[100],
-              child: TabBar(
-                controller: _tabController,
-                tabs: <Widget>[
-                  Tab(child: Text("Overview")),
-                  Tab(child: Text("Repository")),
-                ],
-              ),
-            ),
-            SizedBox(height: 10.0),
-            Container(
-              height: 200.0,
-              child: TabBarView(
-                children: <Widget>[
-                  Center(child: Text("Overview")),
-                  Center(child: Text("Repository")),
-                ],
-              ),
-            )
+                child: Text("Github Name Contributor :",
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold, fontSize: 26.0))),
+            Divider(),
+
+            // ADD YOUR NAME HERE
+            Center(child: Text("github.com/MochIsrin068"))
           ],
         ),
       ),
