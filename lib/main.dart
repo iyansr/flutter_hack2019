@@ -49,7 +49,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
             Divider(),
 
             // ADD YOUR NAME HERE
-            Center(child: Text("github.com/MochIsrin068"))
+            Center(child: Text("github.com/MochIsrin068")),
+            Center(child: Text("github.com/iyansr")),
           ],
         ),
       ),
